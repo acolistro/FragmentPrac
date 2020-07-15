@@ -6,6 +6,11 @@ public class Course {
     private String courseName;
     private String courseImage;
 
+    public Course(String courseName, String courseImage) {
+        this.courseName = courseName;
+        this.courseImage = courseImage;
+    }
+
     public int getImageResourceId(Context context){
         return context.getResources().getIdentifier(this.courseName, "drawable", context.getPackageName());
     }
