@@ -4,7 +4,8 @@
     android:id="@+id/myContainer"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".MainActivity"
+    android:layout_toEndOf="@+id/myContainer">
 
 <!--    <fragment-->
 <!--        android:id="@+id/my_fragment"-->
