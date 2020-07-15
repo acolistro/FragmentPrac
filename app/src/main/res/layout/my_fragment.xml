@@ -7,9 +7,9 @@
     tools:context=".MainActivity"
     android:layout_toEndOf="@+id/myContainer">
 
-    <TextView
-        android:text="@string/my_fragment"
+    <ListView
+        android:id="@android:id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
 
 </FrameLayout>

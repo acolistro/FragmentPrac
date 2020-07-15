@@ -22,17 +22,17 @@ public class CourseArrayAdapter extends ArrayAdapter<Course> {
     private Context context;
     private List<Course> courses;
 
-    public CourseArrayAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull Course[] courses) {
+    public CourseArrayAdapter(@NonNull Context context, @LayoutRes int resource, @NonNull List<Course> courses) {
         super(context, resource, courses);
         this.context = context;
-        this.courses = Arrays.asList(courses);
+        this.courses = courses;
     }
 
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
-        Course course = courses.get(position);
+        Course course = (Course) courses.get(position);
         LayoutInflater inflater = (LayoutInflater) context.getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
 
         View view = inflater.inflate(R.layout.course_listitem, null);
